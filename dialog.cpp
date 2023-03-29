@@ -29,10 +29,10 @@ Dialog::Dialog(QWidget *parent) :
     }
 }
 
-Dialog::~Dialog()
-{
-    delete ui;
-}
+//Dialog::~Dialog()
+//{
+//    delete ui;
+//}
 
 void Dialog::on_pushButton_clicked()
 {

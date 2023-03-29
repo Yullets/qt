@@ -14,16 +14,16 @@ class Dialog : public QDialog
 
 public:
     explicit Dialog(QWidget *parent = nullptr);
-    ~Dialog();
+//    ~Dialog();
 
 private slots:
     void on_pushButton_clicked();
 
 
 private:
-    Ui::Dialog *ui;
+    std::shared_ptr<Ui::Dialog> ui;
     QStandardItemModel *model;
-    QDialog *window;
+    std::shared_ptr<QDialog> window;
 };
 
 #endif // DIALOG_H

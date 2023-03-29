@@ -14,13 +14,13 @@ class MainWindow : public QMainWindow
 
 public:
     MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
+//    ~MainWindow();
 
 private slots:
     void on_pushButton_clicked();
 
 private:
-    Ui::MainWindow *ui;
+    std::shared_ptr<Ui::MainWindow> ui;
 
 
 };
